@@ -3,7 +3,7 @@
     - /etc/ansible/roles/role-ossec/roles/wazuh/ansible-wazuh-agent
   vars:
     wazuh_managers:
-      - address: localhost
+      - address: 10.0.1.204
         port: 1514
         protocol: udp
         api_port: 55000
