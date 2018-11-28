@@ -1,8 +1,8 @@
-- hosts: 10.0.1.204
+- hosts: 10.0.1.178
   roles:
     - role: /etc/ansible/roles/wazuh-ansible/roles/wazuh/ansible-wazuh-manager
-    - { role: /etc/ansible/roles/wazuh-ansible/roles/wazuh/ansible-filebeat, filebeat_output_logstash_hosts: '10.0.1.146:5000' }
-- hosts: 10.0.1.146
+    - { role: /etc/ansible/roles/wazuh-ansible/roles/wazuh/ansible-filebeat, filebeat_output_logstash_hosts: '10.0.1.142:5000' }
+- hosts: 10.0.1.142
   roles:
     - { role: /etc/ansible/roles/wazuh-ansible/roles/elastic-stack/ansible-elasticsearch, elasticsearch_network_host: 'localhost' }
     - { role: /etc/ansible/roles/wazuh-ansible/roles/elastic-stack/ansible-logstash, logstash_input_beats: true, elasticsearch_network_host: 'localhost' }
