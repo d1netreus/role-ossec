@@ -1,4 +1,4 @@
-- hosts: 10.0.1.214 10.0.1.199
+- hosts: 10.0.1.142 10.0.1.199
   roles:
     - /etc/ansible/roles/wazuh-ansible/roles/wazuh/ansible-wazuh-agent
   vars:
